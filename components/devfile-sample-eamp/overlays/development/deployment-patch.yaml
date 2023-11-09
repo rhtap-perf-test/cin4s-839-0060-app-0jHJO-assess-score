@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-eamp
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/cin4s-839-0060-tenant/cin4s-839-0060-app/devfile-sample-eamp@sha256:45d922f84701c92416ba784955d2a56b0a37a6aab2d5a245eec600ad8ae35935
+        name: my-nodejs
+        resources: {}
+status: {}
